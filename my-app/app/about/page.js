@@ -5,6 +5,7 @@ export const metadata = {
 };
 
 export default function About() {
+  //throw new Error("failed to load");
   return (
     <main>
       <h1>About page</h1>
