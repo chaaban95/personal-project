@@ -6,12 +6,16 @@ export default async function Movie({ params }) {
   const res = await data.json();
   const imageURL = "https://image.tmdb.org/t/p/original";
   //   console.log(params);
+  // throw new Error("failed to load");
   return (
     <>
-      <h1>{res.title}</h1>
-      <h2>Length: {res.runtime} minutes</h2>
-      <img src={imageURL + res.backdrop_path} alt={res.title}></img>
-      <p>{res.overview}</p>
+      <h4 className="breadCrumb">Movies / {res.title} </h4>
+      <main className="singleMovie">
+        <h1>{res.title}</h1>
+        <h2>Length: {res.runtime} minutes</h2>
+        <img src={imageURL + res.backdrop_path} alt={res.title}></img>
+        <p className="overview">{res.overview}</p>
+      </main>
     </>
   );
 }

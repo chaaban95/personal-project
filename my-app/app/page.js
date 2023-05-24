@@ -6,20 +6,24 @@ export default async function Home() {
   );
   const res = await data.json();
   // console.log(res);
+  // throw new Error("failed to load");
   return (
-    <main className="home">
-      {res.results.map((movie) => (
-        <div className="moviesWrapper">
-          <Movies
-            key={movie.id}
-            id={movie.id}
-            title={movie.title}
-            release={movie.release_date}
-            poster={movie.poster_path}
-            // overview={movie.overview}
-          />
-        </div>
-      ))}
-    </main>
+    <>
+      <h4 className="breadCrumb">Movies</h4>
+      <main className="home">
+        {res.results.map((movie) => (
+          <div className="moviesWrapper">
+            <Movies
+              key={movie.id}
+              id={movie.id}
+              title={movie.title}
+              release={movie.release_date}
+              poster={movie.poster_path}
+              // overview={movie.overview}
+            />
+          </div>
+        ))}
+      </main>
+    </>
   );
 }

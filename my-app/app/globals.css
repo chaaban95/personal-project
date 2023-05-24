@@ -37,6 +37,11 @@ nav ul {
   color: wheat
 }
 
+.breadCrumb {
+  margin-top: 15px;
+  text-align: center;
+}
+
 .home {
   max-width: 1200px;
   margin: 0 auto;
@@ -46,10 +51,22 @@ nav ul {
   gap: 30px;
 }
 
-
 .moviesWrapper {
 display: flex;  
 flex-direction: column;
+justify-content:space-between ;
 gap: 10px;
-justify-content: end;
+}
+
+.singleMovie {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.overview{
+  max-width: 75ch;
 }
