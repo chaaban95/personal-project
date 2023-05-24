@@ -1,4 +1,4 @@
-import Movies from "./components/Movies";
+import Movies from "../components/Movies";
 
 export default async function Home() {
   const data = await fetch(
@@ -7,16 +7,18 @@ export default async function Home() {
   const res = await data.json();
   // console.log(res);
   return (
-    <main>
+    <main className="home">
       {res.results.map((movie) => (
-        <Movies
-          key={movie.id}
-          id={movie.id}
-          title={movie.title}
-          release={movie.release_date}
-          poster={movie.poster_path}
-          // overview={movie.overview}
-        />
+        <div className="moviesWrapper">
+          <Movies
+            key={movie.id}
+            id={movie.id}
+            title={movie.title}
+            release={movie.release_date}
+            poster={movie.poster_path}
+            // overview={movie.overview}
+          />
+        </div>
       ))}
     </main>
   );

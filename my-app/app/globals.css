@@ -6,6 +6,50 @@
 
 img {
   max-width: 100%;
-  width: 300px;
   display: block;
+}
+
+nav {
+  background-color: rebeccapurple;
+  font-size: 21px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  list-style: none;
+
+}
+
+.txtStyle {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.txtStyle:hover {
+  color: wheat;
+}
+
+.active {
+  color: wheat
+}
+
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  gap: 30px;
+}
+
+
+.moviesWrapper {
+display: flex;  
+flex-direction: column;
+gap: 10px;
+justify-content: end;
 }
