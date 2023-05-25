@@ -10,7 +10,7 @@ export default async function Home() {
   return (
     <>
       <h4 className="breadCrumb">Movies</h4>
-      <main className="home">
+      <div className="home">
         {res.results.map((movie) => (
           <div className="moviesWrapper">
             <Movies
@@ -23,7 +23,7 @@ export default async function Home() {
             />
           </div>
         ))}
-      </main>
+      </div>
     </>
   );
 }

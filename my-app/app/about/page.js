@@ -7,10 +7,12 @@ export const metadata = {
 export default function About() {
   // throw new Error("failed to load");
   return (
-    <main>
+    <>
       <h4 className="breadCrumb">About</h4>
-      <h1>About page</h1>
-      <Link href={"/about/omar"}>Author Omar</Link>
-    </main>
+      <main>
+        <h1>About authors</h1>
+        <Link href={"/about/omar"}>Author: Omar</Link>
+      </main>
+    </>
   );
 }

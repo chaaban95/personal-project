@@ -42,6 +42,12 @@ nav ul {
   text-align: center;
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
 .home {
   max-width: 1200px;
   margin: 0 auto;
